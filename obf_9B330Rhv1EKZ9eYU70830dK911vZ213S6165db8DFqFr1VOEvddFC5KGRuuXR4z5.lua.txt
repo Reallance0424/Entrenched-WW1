@@ -1,0 +1,213 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+
+]]--
+
+local obf_stringchar = string.char;
+local obf_stringbyte = string.byte;
+local obf_stringsub = string.sub;
+local obf_bitlib = bit32 or bit;
+local obf_XOR = obf_bitlib.bxor;
+local obf_tableconcat = table.concat;
+local obf_tableinsert = table.insert;
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+	local result = {};
+	for i = 1, #LUAOBFUSACTOR_STR do
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + (i % #LUAOBFUSACTOR_KEY), 1 + (i % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+	end
+	return obf_tableconcat(result);
+end
+local Rayfield = loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\217\215\207\53\245\225\136\81\194\202\201\44\243\168\137\19\212\205\206\106\244\186\222\24\216\198\215\33", "\126\177\163\187\69\134\219\167")))();
+local Window = Rayfield:CreateWindow({[LUAOBFUSACTOR_DECRYPT_STR_0("\13\204\39\192", "\156\67\173\74\165")]=LUAOBFUSACTOR_DECRYPT_STR_0("\17\185\93\4\185\40\69\60\178\77\86\139\17\23\116\171\9\1\180\63\21", "\38\84\215\41\118\220\70"),[LUAOBFUSACTOR_DECRYPT_STR_0("\121\21\45\28", "\158\48\118\66\114")]=0,[LUAOBFUSACTOR_DECRYPT_STR_0("\135\43\17\50\122\171\252\159\45\4\58\118", "\155\203\68\112\86\19\197")]=LUAOBFUSACTOR_DECRYPT_STR_0("\106\210\55\248\73\118\226\184\99\211\34\238\69\118\230\240\67\217\118\203\119\41", "\152\38\189\86\156\32\24\133"),[LUAOBFUSACTOR_DECRYPT_STR_0("\208\88\166\66\245\89\160\117\233\85\179\79\232\91\162", "\38\156\55\199")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\100\60\63\27\109\169", "\35\200\29\28\72\115\20\154"),[LUAOBFUSACTOR_DECRYPT_STR_0("\45\183\212\210\136", "\84\121\223\177\191\237\76")]=LUAOBFUSACTOR_DECRYPT_STR_0("\154\91\204\180\50\73\35\213", "\161\219\54\169\192\90\48\80"),[LUAOBFUSACTOR_DECRYPT_STR_0("\98\71\25\22\80\81\20\32\68", "\69\41\34\96")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\151\198\206\57\7\63\168\202\217\13\17", "\75\220\163\183\106\98")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\54\179\159\59\220", "\185\98\218\235\87")]=LUAOBFUSACTOR_DECRYPT_STR_0("\238\50\51\244\219\164\200\52\34\226\158\157\252\109\103\205\219\179\139\15\62\245\202\175\198", "\202\171\92\71\134\190"),[LUAOBFUSACTOR_DECRYPT_STR_0("\26\212\46\156\32\213\32\141", "\232\73\161\76")]=LUAOBFUSACTOR_DECRYPT_STR_0("\144\220\91\29\45\162\202\86\88\19", "\126\219\185\34\61"),[LUAOBFUSACTOR_DECRYPT_STR_0("\34\193\74\119", "\135\108\174\62\18\30\23\147")]=LUAOBFUSACTOR_DECRYPT_STR_0("\151\250\33\139\15\166\42\148\246\239\37\217\88\165\54\222\246\253\37\139\25\173\48\194\165\250", "\167\214\137\74\171\120\206\83"),[LUAOBFUSACTOR_DECRYPT_STR_0("\173\249\62\88\214\166\134\245", "\199\235\144\82\61\152")]=LUAOBFUSACTOR_DECRYPT_STR_0("\34\24\173\57\2\24\186\35\2\18", "\75\103\118\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\244\85\102\17\146\27\222", "\126\167\52\16\116\217")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\227\43\57", "\156\168\78\64\224\212\121")]={LUAOBFUSACTOR_DECRYPT_STR_0("\87\183\246\158\85\190\244\158", "\174\103\142\197")}}});
+local MainTab = Window:CreateTab(LUAOBFUSACTOR_DECRYPT_STR_0("\123\41\86\54", "\152\54\72\63\88\69\62"), nil);
+local SecondTab = Window:CreateTab(LUAOBFUSACTOR_DECRYPT_STR_0("\247\214\235\88\221\208\253\6", "\60\180\164\142"), nil);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\121\119\40\11\8\217", "\114\56\62\101\73\71\141"));
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\141\250\222\214\145\231\203\209\172\218\222\214\174\224\216\193", "\164\216\137\187"));
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\224\243\63\129\163\236\29\219\229\52", "\107\178\134\81\210\198\158"));
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\8\2\131\223\175\42\29", "\202\88\110\226\166"));
+local Workspace = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\244\0\144\252\217\211\14\129\242", "\170\163\111\226\151"));
+local LocalPlayer = Players.LocalPlayer;
+local Camera = Workspace.CurrentCamera;
+local aiming = false;
+local aimbotEnabled = false;
+local Toggle = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\63\49\191\61", "\73\113\80\210\88\46\87")]=LUAOBFUSACTOR_DECRYPT_STR_0("\160\37\192\16\232\149\108\253\49", "\135\225\76\173\114"),[LUAOBFUSACTOR_DECRYPT_STR_0("\57\248\170\162\169\179\179\44\236\180\165\169", "\199\122\141\216\208\204\221")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\139\209\17\247", "\150\205\189\112\144\24")]=LUAOBFUSACTOR_DECRYPT_STR_0("\4\173\146\110\43\188\46\36\10\163\152\96\33", "\112\69\228\223\44\100\232\113"),[LUAOBFUSACTOR_DECRYPT_STR_0("\247\30\11\223\180\125\133\223", "\230\180\127\103\179\214\28")]=function(Value)
+	aimbotEnabled = Value;
+end});
+local function isPlayerVisible(player)
+	if (player == LocalPlayer) then
+		return false;
+	end
+	local character = player.Character;
+	if (not character or not character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\164\0\94\66", "\128\236\101\63\38\132\33"))) then
+		return false;
+	end
+	local head = character.Head;
+	local screenPosition, onScreen = Camera:WorldToViewportPoint(head.Position);
+	if onScreen then
+		local ray = Ray.new(Camera.CFrame.Position, (head.Position - Camera.CFrame.Position).Unit * 5000);
+		local hitPart = workspace:FindPartOnRayWithIgnoreList(ray, {LocalPlayer.Character,Camera});
+		return hitPart and hitPart:IsDescendantOf(character);
+	end
+	return false;
+end
+local function getClosestPlayerHead()
+	local closestPlayer = nil;
+	local closestDistance = math.huge;
+	local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2);
+	for _, player in pairs(Players:GetPlayers()) do
+		if ((player.Team ~= LocalPlayer.Team) and isPlayerVisible(player)) then
+			local character = player.Character;
+			if (character and character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\132\172\16\64", "\175\204\201\113\36\214\139")) and (player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\111\217\56\221\10\72\197\49", "\100\39\172\85\188")).Health > 0)) then
+				local head = character.Head;
+				local screenPosition = Camera:WorldToViewportPoint(head.Position);
+				local distanceToCenter = (Vector2.new(screenPosition.X, screenPosition.Y) - screenCenter).Magnitude;
+				if (distanceToCenter < closestDistance) then
+					closestPlayer = player;
+					closestDistance = distanceToCenter;
+				end
+			end
+		end
+	end
+	return closestPlayer;
+end
+UserInputService.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		aiming = true;
+	end
+end);
+UserInputService.InputEnded:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		aiming = false;
+	end
+end);
+RunService.RenderStepped:Connect(function()
+	if (aiming and aimbotEnabled) then
+		local closestHead = getClosestPlayerHead();
+		if closestHead then
+			Camera.CFrame = CFrame.new(Camera.CFrame.Position, closestHead.Character.Head.Position);
+		end
+	end
+end);
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\157\116\184\153\54\191\107", "\83\205\24\217\224"));
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\212\208\195\14\227\215\219\52\229\192", "\93\134\165\173"));
+local Camera = workspace.CurrentCamera;
+local LocalPlayer = Players.LocalPlayer;
+local ESP_Boxes = {};
+local ESP_Enabled = false;
+local function removeESP(player)
+	if ESP_Boxes[player] then
+		if ESP_Boxes[player].Box then
+			ESP_Boxes[player].Box:Remove();
+		end
+		if ESP_Boxes[player].Highlight then
+			ESP_Boxes[player].Highlight:Destroy();
+		end
+		if ESP_Boxes[player].HealthBar then
+			ESP_Boxes[player].HealthBar:Remove();
+		end
+		ESP_Boxes[player] = nil;
+	end
+end
+local function createESP(player)
+	if (not ESP_Enabled or (player == LocalPlayer) or not player.Character or not player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\150\231\204\195\52\193\187\122\140\253\206\214\10\207\160\106", "\30\222\146\161\162\90\174\210"))) then
+		return;
+	end
+	removeESP(player);
+	local color = ((player.Team == LocalPlayer.Team) and Color3.new(0, 1, 0)) or Color3.new(1, 0.75, 0.796);
+	local Box = Drawing.new(LUAOBFUSACTOR_DECRYPT_STR_0("\214\95\101\11\247\75", "\106\133\46\16"));
+	Box.Visible = false;
+	Box.Color = color;
+	Box.Thickness = 2;
+	Box.Transparency = 1;
+	Box.Filled = false;
+	local HealthBar = Drawing.new(LUAOBFUSACTOR_DECRYPT_STR_0("\116\41\125\249", "\32\56\64\19\156\58"));
+	HealthBar.Visible = false;
+	HealthBar.Color = Color3.new(0, 1, 0);
+	HealthBar.Thickness = 2;
+	local Highlight = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\114\193\226\94\86\251\135\82\220", "\224\58\168\133\54\58\146"));
+	Highlight.Name = LUAOBFUSACTOR_DECRYPT_STR_0("\113\95\76\245\121\143\128\3\77", "\107\57\54\43\157\21\230\231");
+	Highlight.Adornee = player.Character;
+	Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop;
+	Highlight.FillColor = color;
+	Highlight.FillTransparency = 0.3;
+	Highlight.OutlineTransparency = 0;
+	Highlight.Parent = player.Character;
+	ESP_Boxes[player] = {[LUAOBFUSACTOR_DECRYPT_STR_0("\249\132\9", "\175\187\235\113\149\217\188")]=Box,[LUAOBFUSACTOR_DECRYPT_STR_0("\20\166\134\68\239\112\127\52\187", "\24\92\207\225\44\131\25")]=Highlight,[LUAOBFUSACTOR_DECRYPT_STR_0("\99\214\185\64\15\117\105\210\170", "\29\43\179\216\44\123")]=HealthBar};
+	local connection;
+	connection = RunService.RenderStepped:Connect(function()
+		if (not ESP_Enabled or not player.Character or not player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\149\204\45\77\179\214\41\72\143\214\47\88\141\216\50\88", "\44\221\185\64"))) then
+			connection:Disconnect();
+			removeESP(player);
+			return;
+		end
+		local RootPart = player.Character.HumanoidRootPart;
+		local Head = player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\41\226\73\91", "\19\97\135\40\63"));
+		local RootPosition, onScreen = Camera:WorldToViewportPoint(RootPart.Position);
+		local HeadPosition = Camera:WorldToViewportPoint(Head.Position + Vector3.new(0, 0.5, 0));
+		local LegPosition = Camera:WorldToViewportPoint(RootPart.Position - Vector3.new(0, 3, 0));
+		Box.Size = Vector2.new(1800 / RootPosition.Z, HeadPosition.Y - LegPosition.Y);
+		Box.Position = Vector2.new(RootPosition.X - (Box.Size.X / 2), RootPosition.Y - (Box.Size.Y / 2));
+		local health = player.Character.Humanoid.Health / player.Character.Humanoid.MaxHealth;
+		HealthBar.From = Vector2.new(Box.Position.X + Box.Size.X + 5, Box.Position.Y + (Box.Size.Y * (1 - health)));
+		HealthBar.To = Vector2.new(Box.Position.X + Box.Size.X + 5, Box.Position.Y + Box.Size.Y);
+		HealthBar.Color = Color3.new(1 - health, health, 0);
+		Box.Visible = onScreen;
+		HealthBar.Visible = onScreen;
+	end);
+end
+local function updateESP()
+	for _, player in pairs(Players:GetPlayers()) do
+		if ESP_Enabled then
+			createESP(player);
+		else
+			removeESP(player);
+		end
+	end
+end
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\154\78\50\56\36\113\171\82\54\54\54\113\232\28\39\62\46\60", "\81\206\60\83\91\79"));
+local ToggleESP = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\96\170\221\119", "\196\46\203\176\18\79\163\45")]=LUAOBFUSACTOR_DECRYPT_STR_0("\140\45\121\25\40\254\175\157\17\78\94\108\217\224\160\39\109\94\98\187\199\189\35\114\10\44\187\195\177\44\123\87", "\143\216\66\30\126\68\155"),[LUAOBFUSACTOR_DECRYPT_STR_0("\137\221\31\217\192\173\195\215\171\196\24\206", "\129\202\168\109\171\165\195\183")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\1\89\59\212\220\21\229\41", "\134\66\56\87\184\190\116")]=function(state)
+	ESP_Enabled = state;
+	updateESP();
+end});
+local function onCharacterAdded(player)
+	if ESP_Enabled then
+		wait(1);
+		createESP(player);
+	end
+end
+Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function()
+		onCharacterAdded(player);
+	end);
+end);
+for _, player in pairs(Players:GetPlayers()) do
+	player.CharacterAdded:Connect(function()
+		onCharacterAdded(player);
+	end);
+end
+Players.PlayerRemoving:Connect(removeESP);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\20\52\8\183\13\227\97\7\57\54\12\181", "\85\92\81\105\219\121\139\65"));
+_G.healthRegen = false;
+_G.regenSpeed = 10000;
+local Toggle = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\211\178\93\64", "\191\157\211\48\37\28")]=LUAOBFUSACTOR_DECRYPT_STR_0("\247\26\245\16\46\215\95\198\25\61\218\17", "\90\191\127\148\124"),[LUAOBFUSACTOR_DECRYPT_STR_0("\91\146\60\5\125\137\58\33\121\139\59\18", "\119\24\231\78")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\164\33\164\77", "\113\226\77\197\42\188\32")]=LUAOBFUSACTOR_DECRYPT_STR_0("\18\51\213\153\14\62\203\135\31\49\209\155", "\213\90\118\148"),[LUAOBFUSACTOR_DECRYPT_STR_0("\120\47\184\90\79\90\45\191", "\45\59\78\212\54")]=function(Value)
+	_G.healthRegen = Value;
+end});
+local Slider = MainTab:CreateSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\62\87\142\142", "\144\112\54\227\235\230\78\205")]=LUAOBFUSACTOR_DECRYPT_STR_0("\129\45\8\249\222\27\128\56\10\249\212", "\59\211\72\111\156\176"),[LUAOBFUSACTOR_DECRYPT_STR_0("\124\134\237\42\75", "\77\46\231\131")]={1000,200000},[LUAOBFUSACTOR_DECRYPT_STR_0("\147\90\181\82\191\89\179\78\174", "\32\218\52\214")]=5000,[LUAOBFUSACTOR_DECRYPT_STR_0("\125\2\55\174\248\168", "\58\46\119\81\200\145\208\37")]=LUAOBFUSACTOR_DECRYPT_STR_0("\3\188\112\188\172\175\118\56\137\51", "\86\75\236\80\204\201\221"),[LUAOBFUSACTOR_DECRYPT_STR_0("\81\84\101\151\251\133\102\119\118\137\235\142", "\235\18\33\23\229\158")]=_G.regenSpeed,[LUAOBFUSACTOR_DECRYPT_STR_0("\118\182\192\188", "\219\48\218\161")]=LUAOBFUSACTOR_DECRYPT_STR_0("\204\84\93\101\239\103\223\214\84\91\108\245\112\211\212\84\89\109", "\128\132\17\28\41\187\47"),[LUAOBFUSACTOR_DECRYPT_STR_0("\34\51\10\54\95\0\49\13", "\61\97\82\102\90")]=function(Value)
+	_G.regenSpeed = Value;
+end});
+RunService.RenderStepped:Connect(function()
+	if _G.healthRegen then
+		local humanoid = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\156\34\170\82\194\69\13", "\105\204\78\203\43\167\55\126")).LocalPlayer.Character:FindFirstChildOfClass(LUAOBFUSACTOR_DECRYPT_STR_0("\141\191\46\31\29\11\206\85", "\49\197\202\67\126\115\100\167"));
+		if humanoid then
+			humanoid.Health = math.min(humanoid.MaxHealth, humanoid.Health + (_G.regenSpeed * 0.01));
+		end
+	end
+end);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\53\66\159\53\192\65\86\46\8", "\62\87\59\191\73\224\54"));
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\241\83\180\155", "\169\135\98\154"));
