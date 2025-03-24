@@ -1,0 +1,270 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+
+]]--
+
+local obf_stringchar = string.char;
+local obf_stringbyte = string.byte;
+local obf_stringsub = string.sub;
+local obf_bitlib = bit32 or bit;
+local obf_XOR = obf_bitlib.bxor;
+local obf_tableconcat = table.concat;
+local obf_tableinsert = table.insert;
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+	local result = {};
+	for i = 1, #LUAOBFUSACTOR_STR do
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + (i % #LUAOBFUSACTOR_KEY), 1 + (i % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+	end
+	return obf_tableconcat(result);
+end
+local Rayfield = loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\217\215\207\53\245\225\136\81\194\202\201\44\243\168\137\19\212\205\206\106\244\186\222\24\216\198\215\33", "\126\177\163\187\69\134\219\167")))();
+local Window = Rayfield:CreateWindow({[LUAOBFUSACTOR_DECRYPT_STR_0("\13\204\39\192", "\156\67\173\74\165")]=LUAOBFUSACTOR_DECRYPT_STR_0("\17\185\93\4\185\40\69\60\178\77\86\139\17\23\116\171\9\1\180\63\21", "\38\84\215\41\118\220\70"),[LUAOBFUSACTOR_DECRYPT_STR_0("\121\21\45\28", "\158\48\118\66\114")]=86379946153251,[LUAOBFUSACTOR_DECRYPT_STR_0("\135\43\17\50\122\171\252\159\45\4\58\118", "\155\203\68\112\86\19\197")]=LUAOBFUSACTOR_DECRYPT_STR_0("\106\210\55\248\73\118\226\184\99\211\34\238\69\118\230\240\67\217\118\203\119\41", "\152\38\189\86\156\32\24\133"),[LUAOBFUSACTOR_DECRYPT_STR_0("\208\88\166\66\245\89\160\117\233\85\179\79\232\91\162", "\38\156\55\199")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\100\60\63\27\109\169", "\35\200\29\28\72\115\20\154"),[LUAOBFUSACTOR_DECRYPT_STR_0("\45\183\212\210\136", "\84\121\223\177\191\237\76")]=LUAOBFUSACTOR_DECRYPT_STR_0("\154\91\204\180\50\73\35\213", "\161\219\54\169\192\90\48\80"),[LUAOBFUSACTOR_DECRYPT_STR_0("\109\75\19\36\75\78\5\23\72\91\6\44\76\78\4\21\91\77\13\53\93\81", "\69\41\34\96")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\152\202\196\11\0\39\185\225\194\3\14\47\139\194\197\4\11\37\187\208", "\75\220\163\183\106\98")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\33\181\133\49\208\5\175\153\54\205\11\181\133\4\216\20\179\133\48", "\185\98\218\235\87")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\238\50\38\228\210\175\207", "\202\171\92\71\134\190")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\15\206\32\140\44\211\2\137\36\196", "\232\73\161\76")]=nil,[LUAOBFUSACTOR_DECRYPT_STR_0("\157\208\78\88\48\186\212\71", "\126\219\185\34\61")]=LUAOBFUSACTOR_DECRYPT_STR_0("\41\192\74\96\123\121\240\239\9\202\30\101\105\38", "\135\108\174\62\18\30\23\147")},[LUAOBFUSACTOR_DECRYPT_STR_0("\146\224\57\200\23\188\55", "\167\214\137\74\171\120\206\83")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\174\254\51\95\244\162\143", "\199\235\144\82\61\152")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\46\24\175\34\19\19", "\75\103\118\217")]=LUAOBFUSACTOR_DECRYPT_STR_0("\201\91\121\26\175\23\211\81\124\29\183\21", "\126\167\52\16\116\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\250\43\45\133\185\27\249\218\4\47\137\186\10", "\156\168\78\64\224\212\121")]=true},[LUAOBFUSACTOR_DECRYPT_STR_0("\44\235\188\253\30\253\177\203\10", "\174\103\142\197")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\125\45\70\11\32\74\236\95\38\88\43", "\152\54\72\63\88\69\62")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\224\205\250\80\209", "\60\180\164\142")]=LUAOBFUSACTOR_DECRYPT_STR_0("\125\80\17\59\34\227\17\80\91\1\105\16\218\67\24\117\0\48\103\222\11\75\74\0\36", "\114\56\62\101\73\71\141"),[LUAOBFUSACTOR_DECRYPT_STR_0("\139\252\217\208\177\253\215\193", "\164\216\137\187")]=LUAOBFUSACTOR_DECRYPT_STR_0("\249\227\40\242\149\231\24\198\227\60", "\107\178\134\81\210\198\158"),[LUAOBFUSACTOR_DECRYPT_STR_0("\22\1\150\195", "\202\88\110\226\166")]=LUAOBFUSACTOR_DECRYPT_STR_0("\226\28\137\183\221\203\22\209\183\197\205\79\134\244\138\197\0\144\183\193\198\22\194\227\197\131\14\129\244\207\208\28", "\170\163\111\226\151"),[LUAOBFUSACTOR_DECRYPT_STR_0("\55\57\190\61\96\54\36\20", "\73\113\80\210\88\46\87")]=LUAOBFUSACTOR_DECRYPT_STR_0("\164\34\217\0\226\143\47\197\23\227", "\135\225\76\173\114"),[LUAOBFUSACTOR_DECRYPT_STR_0("\41\236\174\181\135\184\190", "\199\122\141\216\208\204\221")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\138\207\17\242\83\243\180\251\2\255\117\197\164\201\21", "\150\205\189\112\144\24")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\14\129\166", "\112\69\228\223\44\100\232\113")]={LUAOBFUSACTOR_DECRYPT_STR_0("\132\70\84\131\228\44\215\132", "\230\180\127\103\179\214\28")}}});
+local MainTab = Window:CreateTab(LUAOBFUSACTOR_DECRYPT_STR_0("\164\10\82\67", "\128\236\101\63\38\132\33"), nil);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\141\160\28\70\185\255", "\175\204\201\113\36\214\139"));
+local currentTarget = "";
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\114\223\48\206\45\73\220\32\200\55\66\222\35\213\7\66", "\100\39\172\85\188"));
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\159\109\183\179\54\191\110\176\131\54", "\83\205\24\217\224"));
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\214\201\204\36\227\215\222", "\93\134\165\173"));
+local Player = Players.LocalPlayer;
+local Char = Player.Character;
+local Mouse = Player:GetMouse();
+local Root = Char:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\150\231\204\195\52\193\187\122\140\253\206\214\10\207\160\106", "\30\222\146\161\162\90\174\210"));
+local Humanoid = Char:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\205\91\125\11\235\65\121\14", "\106\133\46\16"));
+local Prediction_Enable = true;
+local SelectionBox = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\107\37\127\249\89\84\81\47\125\222\85\88", "\32\56\64\19\156\58"), script);
+SelectionBox.Color3 = Color3.fromRGB(255, 255, 255);
+SelectionBox.LineThickness = 0.02;
+local A_1 = false;
+local A_2 = false;
+local players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\106\196\228\79\95\224\147", "\224\58\168\133\54\58\146"));
+local list1 = {};
+local function updatePlayerList()
+	list1 = {};
+	for _, player in ipairs(players:GetPlayers()) do
+		if ((player.Character and (player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\113\67\70\252\123\137\142\15", "\107\57\54\43\157\21\230\231")).Health > 0)) or (4593 <= 2672)) then
+			table.insert(list1, player.Name);
+		end
+	end
+end
+updatePlayerList();
+local Workspace = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\236\132\3\254\170\204\206\216\142", "\175\187\235\113\149\217\188"));
+local LocalPlayer = Players.LocalPlayer;
+local Camera = Workspace.CurrentCamera;
+local function isPlayerVisible(player)
+	if ((player ~= LocalPlayer) or (1168 > 3156)) then
+	else
+		return false;
+	end
+	local character = player.Character;
+	if (not character or not character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\20\170\128\72", "\24\92\207\225\44\131\25")) or (572 > 4486)) then
+		return false;
+	end
+	local head = character.Head;
+	local screenPosition, onScreen = Camera:WorldToViewportPoint(head.Position);
+	if onScreen then
+		local ray = Ray.new(Camera.CFrame.Position, (head.Position - Camera.CFrame.Position).Unit * 5000);
+		local hitPart = workspace:FindPartOnRayWithIgnoreList(ray, {LocalPlayer.Character,Camera});
+		return hitPart and hitPart:IsDescendantOf(character);
+	end
+	return false;
+end
+local function getClosestPlayerHead()
+	local closestPlayer = nil;
+	local closestDistance = math.huge;
+	local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2);
+	for _, player in pairs(Players:GetPlayers()) do
+		if ((player.Team ~= LocalPlayer.Team) and isPlayerVisible(player)) then
+			local character = player.Character;
+			if ((1404 == 1404) and character and character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\99\214\185\72", "\29\43\179\216\44\123")) and (player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\149\204\45\77\179\214\41\72", "\44\221\185\64")).Health > 0)) then
+				local head = character.Head;
+				local screenPosition = Camera:WorldToViewportPoint(head.Position);
+				local distanceToCenter = (Vector2.new(screenPosition.X, screenPosition.Y) - screenCenter).Magnitude;
+				if ((distanceToCenter >= closestDistance) or (3748 < 2212)) then
+				else
+					closestPlayer = player;
+					closestDistance = distanceToCenter;
+				end
+			end
+		end
+	end
+	return closestPlayer;
+end
+local function getClosestPlayer()
+	local closestPlayer = nil;
+	local closestDistance = math.huge;
+	local localCharacter = LocalPlayer.Character;
+	local localRootPart = localCharacter and localCharacter:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\41\242\69\94\125\14\238\76\109\124\14\243\120\94\97\21", "\19\97\135\40\63"));
+	if (not localRootPart or (1180 == 2180)) then
+		return nil;
+	end
+	for _, player in pairs(Players:GetPlayers()) do
+		if ((4090 < 4653) and (player ~= LocalPlayer) and player.Character and player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\134\73\62\58\33\62\167\88\1\52\32\37\158\93\33\47", "\81\206\60\83\91\79"))) then
+			local targetRootPart = player.Character.HumanoidRootPart;
+			local distance = (localRootPart.Position - targetRootPart.Position).Magnitude;
+			if ((distance >= closestDistance) or (2652 < 196)) then
+			else
+				closestDistance = distance;
+				closestPlayer = player;
+			end
+		end
+	end
+	return closestPlayer;
+end
+local function faceClosestPlayer()
+	local localCharacter = LocalPlayer.Character;
+	local localRootPart = localCharacter and localCharacter:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\102\190\221\115\33\204\68\160\124\164\223\102\31\194\95\176", "\196\46\203\176\18\79\163\45"));
+	if not localRootPart then
+		return;
+	end
+	local closestPlayer = getClosestPlayer();
+	if ((4135 < 4817) and closestPlayer and closestPlayer.Character and closestPlayer.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\144\55\115\31\42\244\230\188\16\113\17\48\203\238\170\54", "\143\216\66\30\126\68\155"))) then
+		local targetRootPart = closestPlayer.Character.HumanoidRootPart;
+		local direction = (targetRootPart.Position - localRootPart.Position).Unit;
+		localRootPart.CFrame = CFrame.new(localRootPart.Position, localRootPart.Position + direction);
+	end
+end
+local aimbot = false;
+local Toggle = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\132\201\0\206", "\129\202\168\109\171\165\195\183")]=LUAOBFUSACTOR_DECRYPT_STR_0("\3\81\58\218\209\0", "\134\66\56\87\184\190\116"),[LUAOBFUSACTOR_DECRYPT_STR_0("\31\36\27\169\28\229\53\3\61\61\28\190", "\85\92\81\105\219\121\139\65")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\219\191\81\66", "\191\157\211\48\37\28")]=LUAOBFUSACTOR_DECRYPT_STR_0("\222\22\249\30\53\203", "\90\191\127\148\124"),[LUAOBFUSACTOR_DECRYPT_STR_0("\91\134\34\27\122\134\45\28", "\119\24\231\78")]=function(Value)
+	aimbot = Value;
+end});
+RunService.RenderStepped:Connect(function()
+	if ((272 == 272) and aimbot) then
+		local target = getClosestPlayerHead();
+		if ((100 <= 3123) and target and target.Character and target.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\170\40\164\78", "\113\226\77\197\42\188\32"))) then
+			Camera.CFrame = CFrame.new(Camera.CFrame.Position, target.Character.Head.Position);
+		end
+	end
+end);
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if ((not gameProcessed and (input.KeyCode == Enum.KeyCode.V)) or (1369 > 4987)) then
+		aimbot = not aimbot;
+		Toggle:Set(aimbot);
+		Rayfield:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\14\31\224\185\63", "\213\90\118\148")]=LUAOBFUSACTOR_DECRYPT_STR_0("\122\39\185\84\66\79", "\45\59\78\212\54"),[LUAOBFUSACTOR_DECRYPT_STR_0("\51\89\141\159\131\32\185", "\144\112\54\227\235\230\78\205")]=((aimbot and LUAOBFUSACTOR_DECRYPT_STR_0("\150\38\14\254\220\94\183", "\59\211\72\111\156\176")) or LUAOBFUSACTOR_DECRYPT_STR_0("\106\142\240\44\76\139\230\41", "\77\46\231\131")),[LUAOBFUSACTOR_DECRYPT_STR_0("\158\65\164\65\174\93\185\78", "\32\218\52\214")]=2});
+	end
+end);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\107\36\1", "\58\46\119\81\200\145\208\37"));
+local Button = MainTab:CreateButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\5\141\61\169", "\86\75\236\80\204\201\221")]=LUAOBFUSACTOR_DECRYPT_STR_0("\70\83\118\134\245\203\115\77\123\197\251\133\119\76\110\202\234\142\115\76", "\235\18\33\23\229\158"),[LUAOBFUSACTOR_DECRYPT_STR_0("\115\187\205\183\82\187\194\176", "\219\48\218\161")]=function()
+	local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\212\125\125\80\222\93\243", "\128\132\17\28\41\187\47"));
+	local function createHighlight(character)
+		if (not character or (863 >= 4584)) then
+			return;
+		end
+		local highlight = character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\41\59\1\50\81\8\53\14\46", "\61\97\82\102\90"));
+		if (highlight or (724 >= 1668)) then
+			highlight:Destroy();
+		end
+		highlight = Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\132\39\172\67\203\94\25\1\184", "\105\204\78\203\43\167\55\126"));
+		highlight.Name = LUAOBFUSACTOR_DECRYPT_STR_0("\141\163\36\22\31\13\192\89\177", "\49\197\202\67\126\115\100\167");
+		highlight.Adornee = character;
+		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop;
+		if (Players:GetPlayerFromCharacter(character).Team ~= Players.LocalPlayer.Team) then
+			highlight.FillColor = Color3.new(1, 0.75, 0.796);
+		else
+			highlight.FillColor = Color3.new(0, 1, 0);
+		end
+		highlight.FillTransparency = 0.3;
+		highlight.OutlineTransparency = 0;
+		highlight.Parent = character;
+	end
+	local function handlePlayerCharacter(player)
+		player.CharacterAdded:Connect(function(character)
+			createHighlight(character);
+		end);
+		if player.Character then
+			createHighlight(player.Character);
+		end
+	end
+	for _, player in ipairs(Players:GetPlayers()) do
+		if ((428 < 1804) and (player == game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\7\87\222\48\133\68\77", "\62\87\59\191\73\224\54")).LocalPlayer)) then
+		else
+			handlePlayerCharacter(player);
+		end
+	end
+	Players.PlayerAdded:Connect(function(player)
+		handlePlayerCharacter(player);
+	end);
+end});
+local mh = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\215\14\251\208\226\16\233", "\169\135\98\154")).LocalPlayer.Character:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\227\98\41\85\243\60\193\207", "\168\171\23\68\52\157\83")).MaxHealth;
+local h = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\196\125\244\180\32\63\148", "\231\148\17\149\205\69\77")).LocalPlayer.Character:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0("\168\178\202\250\89\240\137\163", "\159\224\199\167\155\55")).Health;
+local Slider = MainTab:CreateSlider({[LUAOBFUSACTOR_DECRYPT_STR_0("\217\242\49\215", "\178\151\147\92")]=LUAOBFUSACTOR_DECRYPT_STR_0("\164\248\77\62\6\68", "\26\236\157\44\82\114\44"),[LUAOBFUSACTOR_DECRYPT_STR_0("\24\47\219\92\47", "\59\74\78\181")]={0,10000000000},[LUAOBFUSACTOR_DECRYPT_STR_0("\12\223\89\72\182\40\212\84\78", "\211\69\177\58\58")]=10000,[LUAOBFUSACTOR_DECRYPT_STR_0("\132\240\127\243\224\211", "\171\215\133\25\149\137")]=LUAOBFUSACTOR_DECRYPT_STR_0("\201\205\51\246\251\56", "\34\129\168\82\154\143\80\156"),[LUAOBFUSACTOR_DECRYPT_STR_0("\166\167\33\25\77\64\157\179\179\63\30\77", "\233\229\210\83\107\40\46")]=h,[LUAOBFUSACTOR_DECRYPT_STR_0("\231\78\51\209", "\101\161\34\82\182")]=LUAOBFUSACTOR_DECRYPT_STR_0("\192\40\120\210\239\202", "\78\136\109\57\158\187\130\226"),[LUAOBFUSACTOR_DECRYPT_STR_0("\29\62\245\253\60\62\250\250", "\145\94\95\153")]=function(Value)
+	game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\205\193\21\204\75\165\238", "\215\157\173\116\181\46")).LocalPlayer.Character.Humanoid.MaxHealth = Value;
+	game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\5\184\138\235\223\39\167", "\186\85\212\235\146")).LocalPlayer.Character.Humanoid.Health = Value;
+	print(game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\242\141\23\231\60\252\75", "\56\162\225\118\158\89\142")).LocalPlayer.Character.Humanoid.Health);
+end});
+local healthregen = false;
+local Toggle = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\114\4\205\170", "\184\60\101\160\207\66")]=LUAOBFUSACTOR_DECRYPT_STR_0("\25\135\125\176\37\138\60\142\52\133\121\178", "\220\81\226\28"),[LUAOBFUSACTOR_DECRYPT_STR_0("\48\192\144\233\239\201\7\227\131\247\255\194", "\167\115\181\226\155\138")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\196\46\230\91", "\166\130\66\135\60\27\17")]=LUAOBFUSACTOR_DECRYPT_STR_0("\86\79\201\112\62", "\80\36\42\174\21"),[LUAOBFUSACTOR_DECRYPT_STR_0("\109\17\59\118\76\17\52\113", "\26\46\112\87")]=function(Value)
+	healthregen = Value;
+end});
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\137\47\170\109\186\173\86", "\212\217\67\203\20\223\223\37"));
+local LocalPlayer = Players.LocalPlayer;
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\143\158\173\192\147\131\184\199\174\190\173\192\172\132\171\215", "\178\218\237\200"));
+local function getNearestPlayer()
+	local closestPlayer = nil;
+	local shortestDistance = math.huge;
+	local localCharacter = LocalPlayer.Character;
+	if (not localCharacter or not localCharacter:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\158\160\235\209\184\186\239\212\132\186\233\196\134\180\244\196", "\176\214\213\134")) or (3325 > 4613)) then
+		return nil;
+	end
+	local localPosition = localCharacter.HumanoidRootPart.Position;
+	for _, player in ipairs(Players:GetPlayers()) do
+		if (((player ~= LocalPlayer) and player.Character and player.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\220\184\187\213\166\89\80\240\159\185\219\188\102\88\230\185", "\57\148\205\214\180\200\54"))) or (4950 <= 4553)) then
+			local distance = (player.Character.HumanoidRootPart.Position - localPosition).Magnitude;
+			if (distance >= shortestDistance) then
+			else
+				closestPlayer = player;
+				shortestDistance = distance;
+			end
+		end
+	end
+	return closestPlayer;
+end
+local function teleportBehindNearestPlayer()
+	local nearestPlayer = getNearestPlayer();
+	if ((2665 <= 3933) and nearestPlayer and nearestPlayer.Character and nearestPlayer.Character:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\58\232\56\53\120\29\244\49\6\121\29\233\5\53\100\6", "\22\114\157\85\84"))) then
+		local targetRoot = nearestPlayer.Character.HumanoidRootPart;
+		local backPosition = targetRoot.CFrame * CFrame.new(0, 0, 0.6);
+		local localCharacter = LocalPlayer.Character;
+		if (localCharacter and localCharacter:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\236\222\30\197\83\249\161\192\249\28\203\73\198\169\214\223", "\200\164\171\115\164\61\150"))) then
+			localCharacter.HumanoidRootPart.CFrame = CFrame.new(backPosition.Position);
+		end
+	else
+		print(LUAOBFUSACTOR_DECRYPT_STR_0("\144\251\67\75\134\191\230\1\92\195\174\248\2\92\134\172\180\5\74\150\176\240\77", "\227\222\148\99\37"));
+	end
+end
+local Button = MainTab:CreateButton({[LUAOBFUSACTOR_DECRYPT_STR_0("\29\83\95\243", "\153\83\50\50\150")]=LUAOBFUSACTOR_DECRYPT_STR_0("\105\70\51\62\118\163\68\83\114\51\44\127\170\84\88\100", "\45\61\22\19\124\19\203"),[LUAOBFUSACTOR_DECRYPT_STR_0("\226\19\1\249\0\113\186\202", "\217\161\114\109\149\98\16")]=function()
+	teleportBehindNearestPlayer();
+end});
+RunService.RenderStepped:Connect(function()
+	if healthregen then
+		game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\34\44\57\101\185\102\1", "\20\114\64\88\28\220")).LocalPlayer.Character.Humanoid.Health = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\1\13\211\173\253\194\174", "\221\81\97\178\212\152\176")).LocalPlayer.Character.Humanoid.MaxHealth;
+	end
+end);
+RunService.RenderStepped:Connect(function()
+	if noclip then
+		for _, part in pairs(game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\253\235\28\226\31\223\244", "\122\173\135\125\155")).LocalPlayer.Character:GetChildren()) do
+			if part:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\166\192\19\188\15\48\218\144", "\168\228\161\96\217\95\81")) then
+				part.CanCollide = false;
+			end
+		end
+	else
+		for _, part in pairs(game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\235\221\47\69\42\69\200", "\55\187\177\78\60\79")).LocalPlayer.Character:GetChildren()) do
+			if ((3273 == 3273) and part:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\15\207\76\238\118\206\146\57", "\224\77\174\63\139\38\175"))) then
+				part.CanCollide = true;
+			end
+		end
+	end
+end);
+RunService.RenderStepped:Connect(function()
+	if aimbot then
+		local closestHead = getClosestPlayerHead();
+		if closestHead then
+			Camera.CFrame = CFrame.new(Camera.CFrame.Position, closestHead.Character.Head.Position);
+		end
+	end
+end);
