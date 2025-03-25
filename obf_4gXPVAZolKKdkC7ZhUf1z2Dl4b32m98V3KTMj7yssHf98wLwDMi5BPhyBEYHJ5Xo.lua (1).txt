@@ -1,0 +1,198 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+
+]]--
+
+local obf_stringchar = string.char;
+local obf_stringbyte = string.byte;
+local obf_stringsub = string.sub;
+local obf_bitlib = bit32 or bit;
+local obf_XOR = obf_bitlib.bxor;
+local obf_tableconcat = table.concat;
+local obf_tableinsert = table.insert;
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+	local result = {};
+	for i = 1, #LUAOBFUSACTOR_STR do
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + (i % #LUAOBFUSACTOR_KEY), 1 + (i % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+	end
+	return obf_tableconcat(result);
+end
+local Rayfield = loadstring(game:HttpGet(LUAOBFUSACTOR_DECRYPT_STR_0("\217\215\207\53\245\225\136\81\194\202\201\44\243\168\137\19\212\205\206\106\244\186\222\24\216\198\215\33", "\126\177\163\187\69\134\219\167")))();
+local Window = Rayfield:CreateWindow({[LUAOBFUSACTOR_DECRYPT_STR_0("\13\204\39\192", "\156\67\173\74\165")]=LUAOBFUSACTOR_DECRYPT_STR_0("\32\178\90\2\160", "\38\84\215\41\118\220\70"),[LUAOBFUSACTOR_DECRYPT_STR_0("\121\21\45\28", "\158\48\118\66\114")]=86379946153251,[LUAOBFUSACTOR_DECRYPT_STR_0("\135\43\17\50\122\171\252\159\45\4\58\118", "\155\203\68\112\86\19\197")]=LUAOBFUSACTOR_DECRYPT_STR_0("\82\216\37\232", "\152\38\189\86\156\32\24\133"),[LUAOBFUSACTOR_DECRYPT_STR_0("\208\88\166\66\245\89\160\117\233\85\179\79\232\91\162", "\38\156\55\199")]=LUAOBFUSACTOR_DECRYPT_STR_0("\170\100\60\60\22\103\238", "\35\200\29\28\72\115\20\154"),[LUAOBFUSACTOR_DECRYPT_STR_0("\45\183\212\210\136", "\84\121\223\177\191\237\76")]=LUAOBFUSACTOR_DECRYPT_STR_0("\154\91\204\180\50\73\35\213", "\161\219\54\169\192\90\48\80"),[LUAOBFUSACTOR_DECRYPT_STR_0("\109\75\19\36\75\78\5\23\72\91\6\44\76\78\4\21\91\77\13\53\93\81", "\69\41\34\96")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\152\202\196\11\0\39\185\225\194\3\14\47\139\194\197\4\11\37\187\208", "\75\220\163\183\106\98")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\33\181\133\49\208\5\175\153\54\205\11\181\133\4\216\20\179\133\48", "\185\98\218\235\87")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\238\50\38\228\210\175\207", "\202\171\92\71\134\190")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\15\206\32\140\44\211\2\137\36\196", "\232\73\161\76")]=nil,[LUAOBFUSACTOR_DECRYPT_STR_0("\157\208\78\88\48\186\212\71", "\126\219\185\34\61")]=LUAOBFUSACTOR_DECRYPT_STR_0("\24\203\77\102", "\135\108\174\62\18\30\23\147")},[LUAOBFUSACTOR_DECRYPT_STR_0("\146\224\57\200\23\188\55", "\167\214\137\74\171\120\206\83")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\174\254\51\95\244\162\143", "\199\235\144\82\61\152")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\46\24\175\34\19\19", "\75\103\118\217")]=LUAOBFUSACTOR_DECRYPT_STR_0("\201\91\121\26\175\23\211\81\124\29\183\21", "\126\167\52\16\116\217"),[LUAOBFUSACTOR_DECRYPT_STR_0("\250\43\45\133\185\27\249\218\4\47\137\186\10", "\156\168\78\64\224\212\121")]=true},[LUAOBFUSACTOR_DECRYPT_STR_0("\44\235\188\253\30\253\177\203\10", "\174\103\142\197")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\125\45\70\11\32\74\236\95\38\88\43", "\152\54\72\63\88\69\62")]={[LUAOBFUSACTOR_DECRYPT_STR_0("\224\205\250\80\209", "\60\180\164\142")]=LUAOBFUSACTOR_DECRYPT_STR_0("\83\91\28\58\62\254\6\93\83", "\114\56\62\101\73\71\141"),[LUAOBFUSACTOR_DECRYPT_STR_0("\139\252\217\208\177\253\215\193", "\164\216\137\187")]=LUAOBFUSACTOR_DECRYPT_STR_0("\249\227\40\242\149\231\24\198\227\60", "\107\178\134\81\210\198\158"),[LUAOBFUSACTOR_DECRYPT_STR_0("\22\1\150\195", "\202\88\110\226\166")]=LUAOBFUSACTOR_DECRYPT_STR_0("\205\0\131\244\201\198\28\145", "\170\163\111\226\151"),[LUAOBFUSACTOR_DECRYPT_STR_0("\55\57\190\61\96\54\36\20", "\73\113\80\210\88\46\87")]=LUAOBFUSACTOR_DECRYPT_STR_0("\149\41\222\6", "\135\225\76\173\114"),[LUAOBFUSACTOR_DECRYPT_STR_0("\41\236\174\181\135\184\190", "\199\122\141\216\208\204\221")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\138\207\17\242\83\243\180\251\2\255\117\197\164\201\21", "\150\205\189\112\144\24")]=true,[LUAOBFUSACTOR_DECRYPT_STR_0("\14\129\166", "\112\69\228\223\44\100\232\113")]={LUAOBFUSACTOR_DECRYPT_STR_0("\132\70\84\131\228\44\215\132", "\230\180\127\103\179\214\28")}}});
+local MainTab = Window:CreateTab(LUAOBFUSACTOR_DECRYPT_STR_0("\164\10\82\67", "\128\236\101\63\38\132\33"), nil);
+local Main = MainTab:CreateSection(LUAOBFUSACTOR_DECRYPT_STR_0("\141\160\28\70\185\255", "\175\204\201\113\36\214\139"));
+local isAimbotEnabled = false;
+local Toggle = MainTab:CreateToggle({[LUAOBFUSACTOR_DECRYPT_STR_0("\105\205\56\217", "\100\39\172\85\188")]=LUAOBFUSACTOR_DECRYPT_STR_0("\140\113\180\130\60\185", "\83\205\24\217\224"),[LUAOBFUSACTOR_DECRYPT_STR_0("\197\208\223\47\227\203\217\11\231\201\216\56", "\93\134\165\173")]=false,[LUAOBFUSACTOR_DECRYPT_STR_0("\152\254\192\197", "\30\222\146\161\162\90\174\210")]=LUAOBFUSACTOR_DECRYPT_STR_0("\196\71\125\8\234\90\68\5\226\73\124\15", "\106\133\46\16"),[LUAOBFUSACTOR_DECRYPT_STR_0("\123\33\127\240\88\65\91\43", "\32\56\64\19\156\58")]=function(Value)
+	local FlatIdent_61538 = 0;
+	while true do
+		if (FlatIdent_61538 == 0) then
+			isAimbotEnabled = Value;
+			print(LUAOBFUSACTOR_DECRYPT_STR_0("\123\193\232\84\85\230\192\127\198\228\84\86\247\132\0", "\224\58\168\133\54\58\146"), Value);
+			FlatIdent_61538 = 1;
+		end
+		if (FlatIdent_61538 == 1) then
+			Rayfield:Notify({[LUAOBFUSACTOR_DECRYPT_STR_0("\109\95\95\241\112", "\107\57\54\43\157\21\230\231")]=LUAOBFUSACTOR_DECRYPT_STR_0("\250\130\28\247\182\200\143\232\159\16\225\172\207", "\175\187\235\113\149\217\188"),[LUAOBFUSACTOR_DECRYPT_STR_0("\31\160\143\88\230\119\108", "\24\92\207\225\44\131\25")]=((Value and LUAOBFUSACTOR_DECRYPT_STR_0("\106\218\181\78\20\105\11\246\182\77\25\113\78\215", "\29\43\179\216\44\123")) or LUAOBFUSACTOR_DECRYPT_STR_0("\156\208\45\78\178\205\96\104\180\202\33\78\177\220\36", "\44\221\185\64")),[LUAOBFUSACTOR_DECRYPT_STR_0("\37\242\90\94\103\8\232\70", "\19\97\135\40\63")]=3.5,[LUAOBFUSACTOR_DECRYPT_STR_0("\135\81\50\60\42", "\81\206\60\83\91\79")]=4483362458});
+			break;
+		end
+	end
+end});
+local UserInputService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\123\184\213\96\6\205\93\177\90\152\213\96\57\202\78\161", "\196\46\203\176\18\79\163\45"));
+local RunService = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\138\55\112\45\33\233\249\177\33\123", "\143\216\66\30\126\68\155"));
+local Players = game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\154\196\12\210\192\177\196", "\129\202\168\109\171\165\195\183"));
+local Player = Players.LocalPlayer;
+local Camera = workspace.CurrentCamera;
+local isAiming = false;
+local validPlayers = {};
+local raycastParams = RaycastParams.new();
+raycastParams.FilterType = Enum.RaycastFilterType.Blacklist;
+local function isValidPlayer(target)
+	return target:IsA(LUAOBFUSACTOR_DECRYPT_STR_0("\15\87\51\221\210", "\134\66\56\87\184\190\116")) and target:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\20\36\4\186\23\228\40\49", "\85\92\81\105\219\121\139\65")) and (target.Humanoid.Health > 0) and target:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\213\182\81\65", "\191\157\211\48\37\28")) and target:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\247\10\249\29\52\208\22\240\46\53\208\11\196\29\40\203", "\90\191\127\148\124")) and (Players:GetPlayerFromCharacter(target) ~= Player);
+end
+local function updatePlayers()
+	local FlatIdent_2FBEB = 0;
+	while true do
+		if (FlatIdent_2FBEB == 0) then
+			validPlayers = {};
+			for _, player in ipairs(Players:GetPlayers()) do
+				if ((player ~= Player) and player.Character and isValidPlayer(player.Character)) then
+					table.insert(validPlayers, player.Character);
+				end
+			end
+			break;
+		end
+	end
+end
+local function predictPos(target)
+	local rootPart = target:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\80\146\35\22\118\136\39\19\74\136\33\3\72\134\60\3", "\119\24\231\78"));
+	local head = target:FindFirstChild(LUAOBFUSACTOR_DECRYPT_STR_0("\170\40\164\78", "\113\226\77\197\42\188\32"));
+	if (not rootPart or not head) then
+		return nil;
+	end
+	local velocity = rootPart.Velocity;
+	local predictionTime = 0.02;
+	local predictedPos = rootPart.Position + (velocity * predictionTime);
+	return predictedPos + (head.Position - rootPart.Position);
+end
+local function getTarget()
+	local nearest, minDistance = nil, math.huge;
+	local viewportCenter = Camera.ViewportSize / 2;
+	raycastParams.FilterDescendantsInstances = {Player.Character};
+	for _, target in ipairs(validPlayers) do
+		local FlatIdent_63487 = 0;
+		local predictedPos;
+		while true do
+			if (FlatIdent_63487 == 0) then
+				predictedPos = predictPos(target);
+				if predictedPos then
+					local screenPos, visible = Camera:WorldToViewportPoint(predictedPos);
+					if (visible and (screenPos.Z > 0)) then
+						local ray = workspace:Raycast(Camera.CFrame.Position, (predictedPos - Camera.CFrame.Position).Unit * 1000, raycastParams);
+						if (ray and ray.Instance:IsDescendantOf(target)) then
+							local FlatIdent_44839 = 0;
+							local distance;
+							while true do
+								if (FlatIdent_44839 == 0) then
+									distance = (Vector2.new(screenPos.X, screenPos.Y) - viewportCenter).Magnitude;
+									if (distance < minDistance) then
+										minDistance = distance;
+										nearest = target;
+									end
+									break;
+								end
+							end
+						end
+					end
+				end
+				break;
+			end
+		end
+	end
+	return nearest;
+end
+local function aim(targetPosition)
+	if targetPosition then
+		local FlatIdent_25011 = 0;
+		local smoothFactor;
+		local newLookVector;
+		while true do
+			if (FlatIdent_25011 == 0) then
+				smoothFactor = 0.581;
+				newLookVector = Camera.CFrame.LookVector:Lerp((targetPosition - Camera.CFrame.Position).Unit, smoothFactor);
+				FlatIdent_25011 = 1;
+			end
+			if (FlatIdent_25011 == 1) then
+				Camera.CFrame = CFrame.new(Camera.CFrame.Position, Camera.CFrame.Position + newLookVector);
+				print(LUAOBFUSACTOR_DECRYPT_STR_0("\27\31\249\188\52\17\180\180\46\86\224\180\40\17\241\161\123", "\213\90\118\148"));
+				break;
+			end
+		end
+	end
+end
+RunService.Heartbeat:Connect(function()
+	updatePlayers();
+	if (isAiming and isAimbotEnabled) then
+		local FlatIdent_1076E = 0;
+		local target;
+		while true do
+			if (FlatIdent_1076E == 0) then
+				target = getTarget();
+				if target then
+					local FlatIdent_C460 = 0;
+					local predictedPosition;
+					while true do
+						if (FlatIdent_C460 == 0) then
+							predictedPosition = predictPos(target);
+							if predictedPosition then
+								aim(predictedPosition);
+							else
+								print(LUAOBFUSACTOR_DECRYPT_STR_0("\117\33\244\70\95\94\42\189\85\89\94\42\244\70\66\72\39\160\95\66\85\110\178\89\88\85\42\245", "\45\59\78\212\54"));
+							end
+							break;
+						end
+					end
+				else
+					print(LUAOBFUSACTOR_DECRYPT_STR_0("\62\89\195\159\135\60\170\245\4\22\133\132\147\32\169\177", "\144\112\54\227\235\230\78\205"));
+				end
+				break;
+			end
+		end
+	end
+end);
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if (not gameProcessed and (input.UserInputType == Enum.UserInputType.MouseButton2)) then
+		if isAimbotEnabled then
+			isAiming = true;
+			print(LUAOBFUSACTOR_DECRYPT_STR_0("\129\33\8\244\196\22\176\36\6\255\219\27\183\45\27\249\211\79\182\44\67\188\241\82\190\33\1\251\144\72\167\41\29\232\213\95", "\59\211\72\111\156\176"));
+		else
+			print(LUAOBFUSACTOR_DECRYPT_STR_0("\111\142\238\47\65\147\163\36\93\199\231\36\93\134\225\33\75\131\163\63\71\128\235\57\14\132\239\36\77\140\163\36\73\137\236\63\75\131", "\77\46\231\131"));
+		end
+	end
+end);
+UserInputService.InputEnded:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton2) then
+		local FlatIdent_104D4 = 0;
+		while true do
+			if (FlatIdent_104D4 == 0) then
+				isAiming = false;
+				print(LUAOBFUSACTOR_DECRYPT_STR_0("\136\93\177\72\174\20\181\76\179\87\189\0\168\81\186\69\187\71\179\68\250\117\191\77\179\90\177\0\169\64\185\80\170\81\178", "\32\218\52\214"));
+				break;
+			end
+		end
+	end
+end);
+Players.PlayerRemoving:Connect(function(player)
+	if (player ~= Player) then
+		for i = #validPlayers, 1, -1 do
+			if (validPlayers[i] == player.Character) then
+				table.remove(validPlayers, i);
+				break;
+			end
+		end
+	end
+end);
